@@ -1,11 +1,14 @@
+# User inputs
+
 database = input(f'\nEnter the name of the database you want to create: ')
 environment = input(f'\nEnter the name of the environment (DTAP) you want to create: ')
 
 # Composing the code
 
-line1 = ('CREATE ROLE IF NOT EXISTS RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
-line2 = ('USE ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
-line3 = ('CREATE DATABASE DB_' + str(database) + '_' + str(environment)+';')
+line10 = ('CREATE ROLE IF NOT EXISTS RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
+line15 = ('GRANT ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN TO USER JOHAN;')
+line20 = ('USE ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
+line30 = ('CREATE DATABASE DB_' + str(database) + '_' + str(environment)+';')
 
 # Writing the lines to file
 file1='V1__createdatabase.sql'
