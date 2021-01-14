@@ -13,7 +13,7 @@ line30 = ('CREATE DATABASE DB_' + str(database) + '_' + str(environment)+';')
 # Writing the lines to file
 file1='V1__createdatabase.sql'
 with open(file1,'w') as out:
-    out.write('{}\n{}\n{}\n'.format(line1,line2,line3))
+    out.write('{}\n{}\n{}\n'.format(line10,line15,line20,line30))
   
 # Checking if the data is 
 # written to file or not 
