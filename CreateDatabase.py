@@ -7,11 +7,13 @@ line1 = ('CREATE ROLE IF NOT EXISTS RL_' + str(database) + '_' + str(environment
 line2 = ('USE ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
 line3 = ('CREATE DATABASE DB_' + str(database) + '_' + str(environment)+';')
 
-with open('..\output\V1__createdatabase.sql','w') as out:
+# Writing the lines to file
+file1='V1__createdatabase.sql'
+with open(file1,'w') as out:
     out.write('{}\n{}\n{}\n'.format(line1,line2,line3))
   
 # Checking if the data is 
 # written to file or not 
-file1 = open('..\output\V1__createdatabase.sql', 'r') 
+file1 = open('V1__createdatabase.sql', 'r') 
 print(file1.read()) 
-file1.close() 
+file1.close()

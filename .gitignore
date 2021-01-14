@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# SQL Stuff
+.sql
+
+# General shit
+.DS_Store
