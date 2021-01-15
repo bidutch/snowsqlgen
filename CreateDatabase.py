@@ -9,7 +9,7 @@ strdatabase = str(database)
 
 # Composing the code
 
-line10 = ('CREATE ROLE IF NOT EXISTS RL_' + {strdatabase} + '_' + str(environment)+'_ADMIN;')
+line10 = ('CREATE ROLE IF NOT EXISTS RL_' + strdatabase + '_' + str(environment)+'_ADMIN;')
 line13 = ('GRANT ALL PRIVILEGES ON ACCOUNT TO ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
 line15 = ('GRANT ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN TO USER JOHAN;')
 line20 = ('USE ROLE RL_' + str(database) + '_' + str(environment)+'_ADMIN;')
