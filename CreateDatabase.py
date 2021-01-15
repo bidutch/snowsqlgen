@@ -5,7 +5,7 @@ environment = input(f'\nEnter the name of the environment (DTAP) you want to cre
 
 # Setting variables
 
-str_database = str(database)
+strdatabase = str(database)
 
 # Composing the code
 
